@@ -26,6 +26,10 @@
 			<div class="panel-body">${path}</div>
 		</div>
 		<div class="panel panel-default">
+			<div class="panel-heading">Nome do servlet</div>
+			<div class="panel-body">${nomeservlet}</div>
+		</div>
+		<div class="panel panel-default">
 			<div class="panel-heading">Página principal</div>
 			<form action="<c:url value="/index.jsp"/>" method="GET">
 				<button type="submit" class="btn btn-default">Voltar</button>
