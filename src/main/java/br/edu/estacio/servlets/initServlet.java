@@ -32,7 +32,7 @@ public class initServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getSession().setAttribute("aplicacao",request.getContextPath().replace("/",""));
 		RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-		rd.forward(request, response);
+		rd.include(request, response);
 	}
 
 	/**
