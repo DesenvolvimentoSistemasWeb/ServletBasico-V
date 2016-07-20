@@ -1,8 +1,6 @@
 package br.edu.estacio.servlets;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class initServlet
  */
-@WebServlet(value="/", name="initServlet")
-public class initServlet extends HttpServlet {
+@WebServlet(value="/index", name="IndexServlet")
+public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public initServlet() {
+    public IndexServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,9 +28,7 @@ public class initServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getSession().setAttribute("aplicacao",request.getContextPath().replace("/",""));
-		RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-		rd.include(request, response);
+		System.out.println("Executando o servlet index");
 	}
 
 	/**
