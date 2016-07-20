@@ -8,17 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap.min.css"/>"/>	
 	<title>Cadastrar</title>
 </head>
-<body>
-  <form action="/servletApp/cadastrar" method="POST">
-  <div>
-  	<label>Nome:</label>
+<body class="container">
+	<div class="panel-body">
+		<form action="/servletApp/cadastrar" method="POST">
+  			<div class="form-group">
+  				<label>Nome:</label>
+  			</div>
+  			<div class="form-group">
+  				<input type="text" name="nome" class="form-control"/>
+  			</div>
+  			<div class="form-group">
+  				<input type="submit" value="Enviar" class="btn btn-primary"/>
+  			</div>
+  		</form>
   </div>
-  <div>
-  	<input type="text" name="nome" />
-  </div>
-  <div>
-  	<input type="submit" value="Enviar"/>
-  </div>
-  </form>
 </body>
 </html>
