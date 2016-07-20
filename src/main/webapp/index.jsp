@@ -8,8 +8,18 @@
 </head>
 <body>
 <div class="container">
-	<h2>Informações do sistema...</h2>
-	<a href="/servletApp/informacoes">Informacoes</a>
+	<h2>Uso do jstl (Java Server Pages Standard Tag Library)...</h2>
+	<div class="panel panel-default">
+	  <div class="panel-heading">Comandos jstl</div>
+	  <div class="panel-body">
+	  	<form action="<c:url value="/if"/>">
+	  		<button type="submit" class="btn btn-primary">If</button>
+	  	</form>
+	  	<form action="<c:url value="/foreach"/>">
+	  		<button tupe "submit" class="btn btn-primary">Foreach</button>
+	  	</form>
+	  </div>
+	</div>
 </div>	
 </body>
 </html>
