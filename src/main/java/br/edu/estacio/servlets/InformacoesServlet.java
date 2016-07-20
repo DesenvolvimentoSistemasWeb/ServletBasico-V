@@ -30,6 +30,7 @@ public class InformacoesServlet extends HttpServlet {
 		request.getSession().setAttribute("portaremota",request.getRemotePort());
 		request.getSession().setAttribute("portalocal",request.getLocalPort());
 		request.getSession().setAttribute("path",request.getServletPath());
+		request.getSession().setAttribute("nomeservlet",getServletName());
 		response.sendRedirect(request.getContextPath()+"/informacoes.jsp");
 	}
 
