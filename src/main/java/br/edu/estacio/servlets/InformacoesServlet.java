@@ -26,10 +26,10 @@ public class InformacoesServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Chegou aqui no informacoes get");
 		request.getSession().setAttribute("aplicacao",request.getContextPath().replace("/",""));
 		request.getSession().setAttribute("portaremota",request.getRemotePort());
 		request.getSession().setAttribute("portalocal",request.getLocalPort());
+		request.getSession().setAttribute("path",request.getServletPath());
 		response.sendRedirect(request.getContextPath()+"/informacoes.jsp");
 	}
 

@@ -21,6 +21,16 @@
 			<div class="panel-heading">Porta remota</div>
 			<div class="panel-body">${portaremota}</div>
 		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Caminho do servlet</div>
+			<div class="panel-body">${path}</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Página principal</div>
+			<form action="<c:url value="/index.jsp"/>" method="GET">
+				<button type="submit" class="btn btn-default">Voltar</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
