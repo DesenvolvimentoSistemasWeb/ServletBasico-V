@@ -34,7 +34,25 @@ public class ForEachServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String valorInicial = request.getParameter("valorinicial"); 
+		String valorFinal = request.getParameter("valorfinal");
+		Integer numberInicial=0;
+		Integer numberFinal=0;
+		
+		try {
+			numberInicial = Integer.parseInt(valorInicial);
+			numberFinal = Integer.parseInt(valorFinal);
+		} catch (NumberFormatException e){
+			numberInicial=0;
+			numberFinal=0;
+		}
+		
+		valorInicial=Integer.toString(numberInicial);
+		valorFinal=Integer.toString(numberFinal);
+		
+		request.getSession().setAttribute("valorinicial", valorInicial);
+		request.getSession().setAttribute("valorfinal", valorFinal);
+		
 		doGet(request, response);
 	}
 
