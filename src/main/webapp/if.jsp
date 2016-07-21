@@ -17,7 +17,7 @@
 	  	  <div class="panel-body">
 	  	    <form action="<c:url value="/if"/>" method="post">
 	  	    	<input type="text" name="valor"/>
-	  	    	<button type="subtmit" class="btn btn-secondary">Enviar</button>
+	  	    	<button type="submit" class="btn btn-secondary">Enviar</button>
 	  	    </form>
 	  	  	<c:set var="variavel" value="${valor}"/>
 	  	  	<c:if test="${variavel<100}">
