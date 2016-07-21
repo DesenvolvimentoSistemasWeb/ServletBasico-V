@@ -16,7 +16,10 @@
 	  		<button type="submit" class="btn btn-primary">If</button>
 	  	</form>
 	  	<form action="<c:url value="/foreach"/>">
-	  		<button tupe "submit" class="btn btn-primary">Foreach</button>
+	  		<button type="submit" class="btn btn-primary">Foreach</button>
+	  	</form>
+	  	<form action="<c:url value="/choose"/>">
+	  		<button type="submit" class="btn btn-primary">Choose</button>
 	  	</form>
 	  </div>
 	</div>
