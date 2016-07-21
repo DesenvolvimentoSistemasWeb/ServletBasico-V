@@ -12,15 +12,17 @@
 	<div class="panel panel-default">
 	  <div class="panel-heading">Comandos jstl</div>
 	  <div class="panel-body">
-	  	<form action="<c:url value="/if"/>">
-	  		<button type="submit" class="btn btn-primary">If</button>
-	  	</form>
-	  	<form action="<c:url value="/foreach"/>">
-	  		<button type="submit" class="btn btn-primary">Foreach</button>
-	  	</form>
-	  	<form action="<c:url value="/choose"/>">
-	  		<button type="submit" class="btn btn-primary">Choose</button>
-	  	</form>
+	  	<div class="bnt-group">
+	  		<form action="<c:url value="/if"/>">
+	  			<button type="submit" class="btn btn-primary">If</button>
+	  		</form>
+	  		<form action="<c:url value="/foreach"/>">
+	  			<button type="submit" class="btn btn-primary">Foreach</button>
+	  		</form>
+	  		<form action="<c:url value="/choose"/>">
+	  			<button type="submit" class="btn btn-primary">Choose</button>
+	  		</form>
+	  	</div>
 	  </div>
 	</div>
 </div>	
