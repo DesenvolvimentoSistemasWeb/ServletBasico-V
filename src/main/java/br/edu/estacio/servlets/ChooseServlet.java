@@ -34,7 +34,18 @@ public class ChooseServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String salario= request.getParameter("salario");
+		Integer number=0;
+		
+		try {
+			number = Integer.parseInt(salario);			
+		} catch (NumberFormatException e){
+			number=0;
+		}
+		
+		salario = Integer.toString(number);
+		
+		request.getSession().setAttribute("salario",salario);		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
