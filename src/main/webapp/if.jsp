@@ -10,9 +10,15 @@
 </head>
 <body>
 	<div class="container">
-		<div class="panel panel-default">
+	<h2>Comando If</h2>
+	<div class="panel panel-default">
 		  <div class="panel-heading">Comando If</div>
-	  	  <div class="panel-body"></div>	
+	  	  <div class="panel-body"></div>
+	  	  <div class="panel-footer">
+	  	  	<form method="get">
+	  	  		<button type="submit" class="btn btn-primary" formaction="<c:url value="/index.jsp"/>">Voltar</button>
+	  	  	</form>
+	  	  </div>	
 		</div>
 	</div>
 </body>
