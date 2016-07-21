@@ -10,6 +10,7 @@
 </head>
 <body>
 	<div class="container">
+	<h2>Comando Foreach</h2>
 		<div class="panel panel-default">
 		  <div class="panel-heading">Comando Foreach</div>
 	  	  <div class="panel-body"></div>	
