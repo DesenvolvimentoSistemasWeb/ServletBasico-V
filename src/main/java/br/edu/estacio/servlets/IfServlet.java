@@ -33,8 +33,19 @@ public class IfServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
+		String valor= request.getParameter("valor");
+		Integer number=0;
+		
+		try {
+			number = Integer.parseInt(valor);			
+		} catch (NumberFormatException e){
+			number=0;
+		}
+		
+		valor = Integer.toString(number);
+		
+		request.getSession().setAttribute("valor",valor);
 		doGet(request, response);
 	}
 
